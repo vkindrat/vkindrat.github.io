@@ -1,1 +1,1 @@
-#http://vkindrat.github.io/css
+#http://vkindrat.github.io/
