@@ -1,40 +1,88 @@
-<canvas width="600" height="400"></canvas>
+<!DOCTYPE html>
 
-<script>
-    var tela = document.querySelector('canvas');
-    var pincel = tela.getContext('2d');
+<html>
+	<head>
+		<title>Portfolio - João da Silva</title>
+		<meta charset="UTF-8">
+		<link rel="icon" href="img/favicon.png">
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/site.css">
+		<link rel="stylesheet" href="css/portfolio.css">
+		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Crimson+Text:400,400italic,600">
+		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700">
+	</head>
+	<body>
 
-    pincel.fillStyle = 'grey';
-    pincel.fillRect(0, 0, 600, 400);
-	var raio = 10;
+		<main>
+		<h1 class="titulo-principal">Portfolio</h1>
+		<div>
 
-    function desenhaCirculo(evento) {
+			<p><strong>Veja abaixo a lista dos meus projetos mais relevantes</strong></p>
 
-        var x = evento.pageX - tela.offsetLeft;
-        var y = evento.pageY - tela.offsetTop;
-        console.log(x + ',' + y);
-
-           
-
-           if(evento.shiftKey && raio + 10 <= 40) {
-           	raio = raio + 10;
-           }
-
-           if(evento.altKey && raio - 5 >= 10 ){
-           	
-           	raio = raio - 5;
-
-           }
+			<blockquote>
+				<figure>
+					<img class="foto-bmw">
+						<figcaption>
+							<a href="http://www.bmw.com">BMW.com:reformulação de design e implementação de HTML, CSS e JavaScript</a>
+						</figcaption>
+					</figure>					
+			</blockquote>
 
 
-        pincel.fillStyle = 'blue';
-        pincel.beginPath();
-        pincel.arc(x, y, raio, 0, 2 * 3.14);
-        pincel.fill();
+			<blockquote class="quadro-2">
+				<figure>
+					<img class="foto-uol">
+						<figcaption>
+							<a href="http://www.uol.com.br">UOL.com.br:reformulação de design e implementação de HTML, CSS e JavaScript</a>
+						</figcaption>
+				</figure>
+						
+			</blockquote>
 
-    	}
+			<blockquote class="quadro-3">
+				<figure>
+					<img class="foto-ibm">
+						<figcaption>
+							<a href="http://www.ibm.com">IBM.com:aplicação de progressive enhancement em conjunto com aplicação back-end</a>
+					</figcaption>
+				</figure>
+							
+			</blockquote>
 
-    tela.onclick = desenhaCirculo;
+			<blockquote class="quadro-4">
+				<figure>
+					<img class="foto-g1">
+					<figcaption>
+						<a href="http://www.g1.com.br">G1.com.br:reformulação de desin e implementação de HTML, CSS e JavaScript</a>
+					</figcaption>
+				</figure>		
+			</blockquote>
 
-</script>
-</script>
+		</div>
+		</main>
+		<img class="foto-eu">
+		<aside>
+			<h1>João da Silva</h1>
+			<nav>
+				<ul class="icone-redes-sociais">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="portfolio.html">Portfolio</a></li>
+					<li><a href="bio.html">sobre mim</a></li>
+					<li><a href="blog.html">Blog</a></li>
+					<li><a href="contato.html">Contato</a></li>
+				</ul>
+			</nav>	
+			<ul class="icones-sociais">
+				<li><a class="github"href="https://github.com/joaodasilva">
+				Github</a></li>
+			<li><a class="twitter"href="https://twitter.com/joaodasilva">
+				Twitter</a></li>
+			<li><a class="linkedin"href="https://br.linkedin.com/pub/joao-da-silva/32/4/508">
+				Linkedin</a></li>			
+			</ul>		
+		</aside>
+		<footer id="rodape-pagina">
+			&copy; João da Silva 2014
+		</footer>
+	</body>	
+</html>
