@@ -1,6 +1,120 @@
+.ul-inicial{
+
+    text-transform: none;
+
+}
 
 
+.eficiencia{
+    position: absolute;
+    top:15%;
+    left: 80%;
+    font-family: "Shadows into Light";
+    color:#D5447E;
+    font-size: .6em;
 
+}
+
+.boas-praticas{
+position: absolute;
+    top: 50%;
+    left: 17%;
+    font-family: "Shadows into Light";
+    color:#D5447E;
+    font-size: .6em;
+
+}
+
+.codigo-limpo{
+position: absolute;
+    top: 35%;
+    left: 3%;
+    font-family: "Shadows into Light";
+    color:#D5447E;
+    font-size: .6em;
+
+}
+
+.css3{
+position: absolute;
+    top: 34%;
+    left: 25%;
+    font-family: "Shadows into Light";
+    color:#D5447E;
+    font-size: .6em;
+
+}
+
+.html5{
+  position: absolute;
+    top: 32%;
+    left: 90%;
+    font-family: "Shadows into Light";
+    color:#D5447E;
+    font-size: .6em;
+
+}
+
+.javascript{
+ position: absolute;
+    top: 18;
+    left: 65%;
+    font-family: "Shadows into Light";
+    color:#D5447E;
+    font-size: .6em;
+
+}
+
+.acessibilidade{
+position: absolute;
+    top: 20%;
+    left: 22%;
+    font-family: "Shadows into Light";
+    color:#D5447E;
+    font-size: .6em;
+
+}
+
+.responsivo{
+position: absolute;
+    top: 12%;
+    left: 10%;
+    font-family: "Shadows into Light";
+    color:#D5447E;
+    font-size: .6em;
+
+}
+
+.otimizacoes{
+ position: absolute;
+    top: 43%;
+    left: 78%;
+    font-family: "Shadows into Light";
+    color:#D5447E;
+    font-size: .6em;
+
+
+}
+
+.agilidade{
+position: absolute;
+    top: 5%;
+    left: 27%;
+    font-family: "Shadows into Light";
+    color:#D5447E;
+    font-size: .6em;
+
+}
+
+.design{
+position: absolute;
+    top: 28%;
+    left: 67%;
+    font-family: "Shadows into Light";
+    color:#D5447E;
+    font-size: .6em;
+
+}
 
 .titulo-principal{
     font-size: 300%;
@@ -21,7 +135,8 @@
 
 
 .foto-home {
-    height: 200px;
+    height: 4em;
+    
 }
 
 .saudacao p {
