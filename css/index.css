@@ -7,135 +7,152 @@ header{
 .ul-inicial{
 
     text-transform: none;
+    padding: .2em;
+    margin: .4em auto ;
+     perspective: 6px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom:0; 
+    right:0;
+    width: 100%;
+    height: 100%;   
 }
 
+.ul-inicial li{
+
+    font-size: 130%;
+}
 
 .eficiencia{
     position: absolute;
-    top:15%;
-    left: 80%;
+    top:50%;
+    left: 60%;
     font-family: "Shadows into Light";
     color:#D5447E;
-    font-size: .6em;
-    transform: rotate(-5deg);
+    transform: translate(-50%, -50%) rotate(-5deg) translateZ(4px) scale(0.25);
     
 
 }
 
 .boas-praticas{
 position: absolute;
-    top: 66%;
-    left: 15%;
+    top: 70%;
+    left: 20%;
     font-family: "Shadows into Light";
     color:#D5447E;
-    font-size: .6em;
-    transform: rotate(+9deg);
+    transform: translate(-50%, -50%) rotate(10deg) translateZ(1px) scale(0.25);
+    
 
 }
 
 .codigo-limpo{
-position: absolute;
-    top: 37%;
-    left: 3%;
+    position: absolute;
     font-family: "Shadows into Light";
     color:#D5447E;
-    font-size: .6em;
-    transform: rotate(-9deg);
+    top: 45%;
+    left: 25%;
+    transform: translate(-50%, -50%) rotate(-10deg) translateZ(2px) scale(0.25);
 
 }
 
 .css3{
-position: absolute;
-    top: 46%;
-    left: 30%;
+    position: absolute;
+    top: 55%;
+    left: 35%;
+    transform: translate(-50%, -50%) rotate(5deg) translateZ(2px) scale(0.25);
     font-family: "Shadows into Light";
     color:#D5447E;
-    font-size: .6em;
-    transform: rotate(+3deg);
+    
 
 }
 
 .html5{
   position: absolute;
-    top: 39%;
-    left: 90%;
+    top: 30%;
+    left: 65%;
+    transform: translate(-50%, -50%) rotate(10deg) translateZ(2px) scale(0.25);
     font-family: "Shadows into Light";
     color:#D5447E;
-    font-size: .6em;
-    transform: rotate(+7deg);
+    
+   
 }
 
 .javascript{
- position: absolute;
-    top: 18;
+    position: absolute;
+    top: 15%;
     left: 60%;
+    transform: translate(-50%, -50%) rotate(-5deg) translateZ(1px) scale(0.25);
     font-family: "Shadows into Light";
     color:#D5447E;
-    font-size: .6em;
-    transform: rotate(-4deg);
+    
+    
 
 }
 
 .acessibilidade{
 position: absolute;
-    top: 28%;
-    left: 24%;
+    top: 30%;
+    left: 35%;
+    transform: translate(-50%, -50%) rotate(-5deg) translateZ(3px) scale(0.25);
     font-family: "Shadows into Light";
     color:#D5447E;
-    font-size: .6em;
-    transform: rotate(-6deg);
+    
+    
 
 }
 
 .responsivo{
 position: absolute;
-    top: 12%;
-    left: 10%;
+       top: 40%;
+    left: 40%;
+    transform: translate(-50%, -50%) rotate(10deg) translateZ(3px) scale(0.25);
     font-family: "Shadows into Light";
     color:#D5447E;
-    font-size: .6em;
-    transform: rotate(+8deg);
+   
+    
 
 }
 
 .otimizacoes{
  position: absolute;
-    top: 57%;
-    left: 74%;
+     top: 70%;
+    left: 65%;
+    transform: translate(-50%, -50%) rotate(-5deg) translateZ(2px) scale(0.25);
     font-family: "Shadows into Light";
     color:#D5447E;
-    font-size: .6em;
-    transform: rotate(-6deg);
+    
 
 
 }
 
 .agilidade{
 position: absolute;
-    top: 5%;
-    left: 30%;
+     top: 75%;
+    left: 35%;
+    transform: translate(-50%, -50%) rotate(5deg) translateZ(1px) scale(0.25);
     font-family: "Shadows into Light";
     color:#D5447E;
-    font-size: .6em;
-    transform: rotate(+7deg);
+    
+    
 
 }
 
 .design{
 position: absolute;
-    top: 34%;
-    left: 66%;
+       top: 40%;
+    left: 60%;
+    transform: translate(-50%, -50%) rotate(10deg) translateZ(2px) scale(0.25);
     font-family: "Shadows into Light";
     color:#D5447E;
-    font-size: .6em;
-    transform: rotate(+7deg);
-
+    
+    
 }
 
 .titulo-principal{
-    font-size: 280%;
-    border-bottom: 10px black solid;
-    padding: 90px;
+    font-size: 300%;
+    border-bottom: .2em black solid;
+    padding: .8em;
     text-align: center;
     background-color: #851944;
     color: #FFF;
