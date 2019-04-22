@@ -1,8 +1,12 @@
 
+header{
+    position: relative;
+}
+
+
 .ul-inicial{
 
     text-transform: none;
-
 }
 
 
@@ -13,66 +17,73 @@
     font-family: "Shadows into Light";
     color:#D5447E;
     font-size: .6em;
+    transform: rotate(-5deg);
+    
 
 }
 
 .boas-praticas{
 position: absolute;
-    top: 50%;
-    left: 17%;
+    top: 66%;
+    left: 15%;
     font-family: "Shadows into Light";
     color:#D5447E;
     font-size: .6em;
+    transform: rotate(+9deg);
 
 }
 
 .codigo-limpo{
 position: absolute;
-    top: 35%;
+    top: 37%;
     left: 3%;
     font-family: "Shadows into Light";
     color:#D5447E;
     font-size: .6em;
+    transform: rotate(-9deg);
 
 }
 
 .css3{
 position: absolute;
-    top: 34%;
-    left: 25%;
+    top: 46%;
+    left: 30%;
     font-family: "Shadows into Light";
     color:#D5447E;
     font-size: .6em;
+    transform: rotate(+3deg);
 
 }
 
 .html5{
   position: absolute;
-    top: 32%;
+    top: 39%;
     left: 90%;
     font-family: "Shadows into Light";
     color:#D5447E;
     font-size: .6em;
-
+    transform: rotate(+7deg);
 }
 
 .javascript{
  position: absolute;
     top: 18;
-    left: 65%;
+    left: 60%;
     font-family: "Shadows into Light";
     color:#D5447E;
     font-size: .6em;
+    transform: rotate(-4deg);
 
 }
 
 .acessibilidade{
 position: absolute;
-    top: 20%;
-    left: 22%;
+    top: 28%;
+    left: 24%;
     font-family: "Shadows into Light";
     color:#D5447E;
     font-size: .6em;
+    transform: rotate(-6deg);
 
 }
 
@@ -83,16 +94,18 @@ position: absolute;
     font-family: "Shadows into Light";
     color:#D5447E;
     font-size: .6em;
+    transform: rotate(+8deg);
 
 }
 
 .otimizacoes{
  position: absolute;
-    top: 43%;
-    left: 78%;
+    top: 57%;
+    left: 74%;
     font-family: "Shadows into Light";
     color:#D5447E;
     font-size: .6em;
+    transform: rotate(-6deg);
 
 
 }
@@ -100,20 +113,22 @@ position: absolute;
 .agilidade{
 position: absolute;
     top: 5%;
-    left: 27%;
+    left: 30%;
     font-family: "Shadows into Light";
     color:#D5447E;
     font-size: .6em;
+    transform: rotate(+7deg);
 
 }
 
 .design{
 position: absolute;
-    top: 28%;
-    left: 67%;
+    top: 34%;
+    left: 66%;
     font-family: "Shadows into Light";
     color:#D5447E;
     font-size: .6em;
+    transform: rotate(+7deg);
 
 }
 
@@ -125,7 +140,6 @@ position: absolute;
     background-color: #851944;
     color: #FFF;
     text-transform: uppercase;
-
 }
 
 .subtitulo-principal{
@@ -137,6 +151,7 @@ position: absolute;
 
 .foto-home {
     height: 4em;
+    border-radius: 50%;
     
 }
 
@@ -166,6 +181,8 @@ position: absolute;
 .saudacao em {
     font-size: 5em;
     color: #851944;
+    transform: rotate(-5deg) skew(-10deg);
+    display: inline-block;
 }
 .botao-index {
     background-color: #851944;
@@ -213,15 +230,43 @@ position: absolute;
     background-color: #999;
     color: #FFF;
     border-bottom: .5em solid #851944;
+    position: relative;
 }
 
 .blog h2{
-font-size: 250%
+font-size: 250%;
 }
 
 .blog li a {
     color: #FCF;
+    width: 30%;
 }
+
+.blog li{
+
+    width: 30%;
+}
+
+.mais-recente{
+background-color: #F2FFFC; 
+}
+
+ .blog .mais-recente a{
+
+    color: #F26;
+}
+
+.inicio-post{
+    position: absolute;
+    top: 4em;
+    height: 8em;
+    left: 30%;
+    right: 4em;
+    background-color: #F2FFFC;
+    color: #000;
+    padding: 1.5em;
+}
+
 
 
 .rodape-final{
@@ -241,4 +286,30 @@ main {
     width: 100%;
     padding-bottom: 0;
     float: none;
+}
+
+.banner-twitter{
+    width: 14em;
+    line-height: 1;
+    padding: 1em 0;
+    box-sizing: border-box;
+
+    text-align: center;
+    text-decoration: none;
+    background-color: #3C1D3D;
+    color: white;
+    border: .25em solid black;
+
+    font-size: 1em;
+    font-family: "Open Sans Condensed", sans-serif;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform-origin: 0 0;
+    transform: translate(6.5754em, -2.4749em) rotate(45deg); 
+}
+
+html {
+    overflow-x: hidden;
 }
