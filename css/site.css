@@ -10,12 +10,11 @@ font-size: 120%;
 main div {
 	padding: 30px 0;
 	width: 720px;
-	margin:auto ;
+	margin:auto;
 }
 
 
 h1, h2 {
-	font-size: 30px;
 	font-family: "Open Sans Condensed" ,"Arial", sans-serif;
 }
 
@@ -37,11 +36,12 @@ p {
 
 
 blockquote{
-	background-color: #D9E5E3;
-	border: 10px solid #C2CCCA;
-	width: 250px;
-	box-sizing: border-box;
-	margin: 20px 40px;
+	 background-color: #D9E5E3;
+    border: .5em solid #C2CCCA;
+    padding: 1em;
+    margin: 1em 2em;
+    width: 30ch;
+    box-sizing: border-box;
 }
 
 
@@ -71,7 +71,7 @@ aside a{
 	font-family: "Open Sans Condensed", sans-serif;
 }
 
-blockquote, aside, footer {
+ aside, footer {
     padding: 20px;
 }
 
@@ -153,6 +153,7 @@ float: left;
 }
 
 h2{
+	font-size: 30px;
 	clear:both;
 }
 
