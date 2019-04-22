@@ -133,9 +133,9 @@ position: absolute;
 }
 
 .titulo-principal{
-    font-size: 300%;
+    font-size: 280%;
     border-bottom: 10px black solid;
-    padding: 25px;
+    padding: 90px;
     text-align: center;
     background-color: #851944;
     color: #FFF;
@@ -289,18 +289,18 @@ main {
 }
 
 .banner-twitter{
-    width: 14em;
-    line-height: 1;
-    padding: 1em 0;
+    width: 15em;
+    line-height: .3em;
+    padding: .8em 0;
     box-sizing: border-box;
 
     text-align: center;
     text-decoration: none;
     background-color: #3C1D3D;
     color: white;
-    border: .25em solid black;
+    border: .15em solid black;
 
-    font-size: 1em;
+    font-size: .5em;
     font-family: "Open Sans Condensed", sans-serif;
 
     position: absolute;
@@ -308,6 +308,7 @@ main {
     right: 0;
     transform-origin: 0 0;
     transform: translate(6.5754em, -2.4749em) rotate(45deg); 
+    text-transform: none;
 }
 
 html {
