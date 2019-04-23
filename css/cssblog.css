@@ -1,0 +1,181 @@
+
+body {
+
+line-height: 1.5;
+font-family:"Crimson Text","Times New Roman", serif;
+background-color: #F2FFFC;
+font-size: 120%;
+}
+
+main div {
+	padding: 30px 0;
+	width: 720px;
+	margin:auto ;
+}
+
+
+h1, h2 {
+	font-size: 30px;
+	font-family: "Open Sans Condensed" ,"Arial", sans-serif;
+}
+
+.titulo-principal{
+	font-size: 300%
+	border-bottom: .5rem black solid;
+	padding: 1.25rem;
+	text-align: center;
+    background-color: #851944;
+    color: #FFF;
+    text-transform: uppercase;
+}
+
+
+p {
+	margin: 20px 0;
+	text-align:justify;
+	}
+
+aside{
+background-color: #3C1D3D;
+	color: #F2FFFC;
+}
+
+
+footer{
+color: #F2FFFC;
+}
+
+
+
+nav a {	
+	color: #F2FFFC;
+	text-transform: lowercase;
+}
+
+main a{
+	color: #851944;
+}
+
+aside a{	
+	color: inherit;
+	font-family: "Open Sans Condensed", sans-serif;
+}
+
+ aside, footer {
+    padding: 20px;
+}
+
+aside {
+	text-align: center;
+}
+
+aside h1{
+	
+	font-size: 30px;
+	margin-bottom: 25px;
+}
+
+strong {
+    font-weight: bold;
+}
+
+em {
+    font-style: italic;
+}
+
+
+.icones-sociais li {
+	display:inline-block;  
+}
+
+.icones-sociais a {
+    width:40px;
+    height:40px;
+    text-indent:-9999px;
+    display: block;
+}
+
+
+#rodape-pagina {
+    background-color: #000;
+    color: #F2FFFC;
+    padding: 20px;
+}
+
+.post-blog + .post-blog{
+background-image:linear-gradient(to right,
+	rgba(200, 200, 200, 0),
+    rgba(200, 200, 200, 1),
+    rgba(200, 200, 200, 0));
+background-size: 90% 1px;
+background-repeat: no-repeat;
+background-position: top center;
+
+ padding-top: 1em;
+    margin-top: 1.5em;
+}
+
+.rodape-inicial{
+	border:2px solid #ccc;
+}
+
+
+.leia-mais {
+ 	padding: .5em;
+    margin: 1em;
+    display: inline-block;
+    font-size: 1.5em;
+    text-align: center;
+    background-color: #E6E7E8;
+}
+
+.github{
+background-image:url(../img/github.png);
+}
+
+.twitter{
+background-image:url(../img/twitter.png);
+}
+
+.linkedin{
+background-image:url(../img/linkedin.png);
+}
+
+
+h2{
+	clear:both;
+}
+
+aside, img {
+	float: right;
+	box-sizing: border-box;
+	border-bottom: 10px solid black;
+	border-left: 10px solid black;
+}
+
+
+footer {
+	clear: both;
+	position: fixed;
+	bottom: 0;
+	width: 100%
+
+}
+
+main{
+	float: left;
+	width: 85%;
+	padding-bottom: 100px;
+}
+
+img{
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+aside{
+	width: 15%;
+	position: relative;
+	top: 310px;
+}
