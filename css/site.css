@@ -1,0 +1,317 @@
+
+body {
+
+line-height: 1.5;
+font-family:"Crimson Text","Times New Roman", serif;
+background-color: #F2FFFC;
+font-size: 120%;
+}
+
+main div {
+	padding: 30px 0;
+	width: 720px;
+	margin:auto;
+}
+
+
+h1, h2 {
+	font-family: "Open Sans Condensed" ,"Arial", sans-serif;
+}
+
+main h1{
+	font-size: 60px;
+	border-bottom: 10px black solid;
+	padding: 25px;
+	text-align: center;
+    background-color: #851944;
+    color: #FFF;
+    text-transform: uppercase;
+}
+
+h1{
+	text-shadow: 4px 4px #000;
+}
+
+
+p {
+	margin: 20px 0;
+	text-align:justify;
+	}
+
+
+blockquote{
+	 background-color: #D9E5E3;
+    border: .5em solid #C2CCCA;
+    padding:2%;
+    margin: 1em 1em;
+    width: 30ch;
+    box-sizing: border-box;
+    height: 15em;
+}
+
+
+aside{
+background-color: #3C1D3D;
+	color: #F2FFFC;
+}
+
+
+footer{
+color: #F2FFFC;
+}
+
+
+
+nav a {	
+	color: #F2FFFC;
+	text-transform: lowercase;
+}
+
+main a{
+	color: #851944;
+}
+
+main a:hover,
+main a:focus{
+	color: red;
+}
+
+aside a{	
+	color: inherit;
+	font-family: "Open Sans Condensed", sans-serif;
+}
+
+aside a:hover,
+aside a:focus{
+	text-shadow: .5px .8px pink;
+	opacity: .5px;
+}
+
+ aside, footer {
+    padding: 20px;
+}
+
+aside {
+	text-align: center;
+}
+
+aside h1{
+	
+	font-size: 30px;
+	margin-bottom: 25px;
+}
+
+strong {
+    font-weight: bold;
+}
+
+em {
+    font-style: italic;
+}
+
+
+
+.icones-sociais a:hover:before,
+.icones-sociais a:focus:before{
+	content: '';
+	width:1em;
+	height:1em;
+	background-color: black;
+	position: absolute;
+	bottom: 0;
+    left: 0;
+    transform: translateY(.5em) rotate(45deg);
+
+}
+
+
+
+
+.icones-sociais li {
+	display:inline-block;  
+}
+
+.icones-sociais a:hover:after,
+.icones-sociais a:focus:after{
+	content: attr(data-tooltip);
+	position: absolute;
+    top: 100%;
+    right: 0;
+    text-indent: 0;
+    width: 300%;
+    background: black;
+    font-size: .75em;
+    transform: translateZ();
+    
+}
+
+.icones-sociais a{
+	position: relative;
+	
+}
+
+.rodape-inicial{
+	border:2px solid #ccc;
+}
+
+
+
+.github{
+
+background-image:url(../img/github.png);
+}
+
+.twitter{
+background-image:url(../img/twitter.png);
+}
+
+.linkedin{
+background-image:url(../img/linkedin.png);
+}
+
+
+h2{
+	font-size: 30px;
+	clear:both;
+}
+
+cite{
+	font-style: italic;
+	float: right;
+}
+
+.foto-eu, aside {
+	float: right;
+	box-sizing: border-box;
+	border-bottom: 10px solid black;
+	border-left: 12px solid black;
+}
+
+
+footer {
+	clear: both;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	background-color:rgba(0, 0, 0, 0.8);
+
+}
+
+.rodape-pagina {
+    background-image:radial-gradient(ellipse at left bottom, 
+    rgba(60, 29, 61, 0.8),
+    rgba(60, 29, 61, 0.8) 50%,
+    black 65%,
+    black 70%,
+    transparent 70%,
+    transparent);
+   	width:100%;
+	background-size: 25% 100%;
+	background-repeat: no-repeat;
+    color: #F2FFFC;
+    padding: 20px;
+}
+
+main{
+	float: left;
+	width: 85%;
+	padding-bottom: 100px;
+}
+
+.foto-eu{
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+aside{
+	width: 15%;
+	position: relative;
+	top: 310px;
+	right: 0;
+}
+
+
+legend{
+font-weight: bold;
+font-size: 115%;
+
+}
+
+#nome{
+display:block;
+width: 55em;
+border-color: lightgrey;
+}
+
+#nome:hover,
+#nome:focus{
+	border-color: yellow;
+	opacity:0.5;
+}
+
+
+#email{
+display: block;
+width: 55em;
+border-color: lightgrey;
+}
+
+#email:hover,
+#email:focus{
+border-color:yellow;
+opacity:0.5;
+}
+
+
+button{
+	float: right;
+	position: relative;
+	left: 1em;
+	top: 1em;
+	width: 9em;
+	background-color:#3C1D3D;
+	height: 2.5em;
+	font-size: 100%;
+	font-weight: bold;
+	color: white;
+	font-family: "Open Sans Condensed" ,"Arial", sans-serif;
+	border:none;
+}
+
+button:hover,
+button:focus{
+background-color: #8C1D3D
+}
+
+select{
+	display: block;
+}
+
+input:invalid{
+	box-shadow:0 0 3px red;
+
+
+}
+
+
+fieldset > fieldset {
+    display: inline;
+}
+
+
+label[for="outro"] {
+    display: inline;
+}
+
+input[name="outro"] {
+    width: auto;
+}
+
+input[value="outro"]~input{
+display: none;
+}
+
+input[value="outro"]:checked~input{
+    display: inline;
+}
