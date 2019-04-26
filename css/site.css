@@ -42,10 +42,11 @@ p {
 blockquote{
 	 background-color: #D9E5E3;
     border: .5em solid #C2CCCA;
-    padding: 1em;
-    margin: 1em 2em;
+    padding:2%;
+    margin: 1em 1em;
     width: 30ch;
     box-sizing: border-box;
+    height: 15em;
 }
 
 
@@ -70,9 +71,20 @@ main a{
 	color: #851944;
 }
 
+main a:hover,
+main a:focus{
+	color: red;
+}
+
 aside a{	
 	color: inherit;
 	font-family: "Open Sans Condensed", sans-serif;
+}
+
+aside a:hover,
+aside a:focus{
+	text-shadow: .5px .8px pink;
+	opacity: .5px;
 }
 
  aside, footer {
@@ -98,34 +110,54 @@ em {
 }
 
 
+
+.icones-sociais a:hover:before,
+.icones-sociais a:focus:before{
+	content: '';
+	width:1em;
+	height:1em;
+	background-color: black;
+	position: absolute;
+	bottom: 0;
+    left: 0;
+    transform: translateY(.5em) rotate(45deg);
+
+}
+
+
+
+
 .icones-sociais li {
 	display:inline-block;  
 }
 
-.icones-sociais a {
-    width:40px;
-    height:40px;
-    text-indent:-9999px;
-    display: block;
+.icones-sociais a:hover:after,
+.icones-sociais a:focus:after{
+	content: attr(data-tooltip);
+	position: absolute;
+    top: 100%;
+    right: 0;
+    text-indent: 0;
+    width: 300%;
+    background: black;
+    font-size: .75em;
+    transform: translateZ();
+    
 }
 
-
+.icones-sociais a{
+	position: relative;
+	
+}
 
 .rodape-inicial{
 	border:2px solid #ccc;
 }
 
 
-.leia-mais {
-	margin: 15px;
-	font-size: 20px;
-	padding: 5px;
-	display: inline-block;
-	text-align: center;
-	background-color: #E6E7E8;
-}
 
 .github{
+
 background-image:url(../img/github.png);
 }
 
@@ -137,13 +169,6 @@ background-image:url(../img/twitter.png);
 background-image:url(../img/linkedin.png);
 }
 
-.Fiat{
-float: right;
-}
-
-.Petrobras{
-float: left;
-}
 
 h2{
 	font-size: 30px;
@@ -175,7 +200,7 @@ footer {
 .rodape-pagina {
     background-image:radial-gradient(ellipse at left bottom, 
     rgba(60, 29, 61, 0.8),
-    rgba(60, 29, 61, 0.8) 65%,
+    rgba(60, 29, 61, 0.8) 50%,
     black 65%,
     black 70%,
     transparent 70%,
@@ -204,4 +229,89 @@ aside{
 	position: relative;
 	top: 310px;
 	right: 0;
+}
+
+
+legend{
+font-weight: bold;
+font-size: 115%;
+
+}
+
+#nome{
+display:block;
+width: 55em;
+border-color: lightgrey;
+}
+
+#nome:hover,
+#nome:focus{
+	border-color: yellow;
+	opacity:0.5;
+}
+
+
+#email{
+display: block;
+width: 55em;
+border-color: lightgrey;
+}
+
+#email:hover,
+#email:focus{
+border-color:yellow;
+opacity:0.5;
+}
+
+
+button{
+	float: right;
+	position: relative;
+	left: 1em;
+	top: 1em;
+	width: 9em;
+	background-color:#3C1D3D;
+	height: 2.5em;
+	font-size: 100%;
+	font-weight: bold;
+	color: white;
+	font-family: "Open Sans Condensed" ,"Arial", sans-serif;
+	border:none;
+}
+
+button:hover,
+button:focus{
+background-color: #8C1D3D
+}
+
+select{
+	display: block;
+}
+
+input:invalid{
+	box-shadow:0 0 3px red;
+
+
+}
+
+
+fieldset > fieldset {
+    display: inline;
+}
+
+
+label[for="outro"] {
+    display: inline;
+}
+
+input[name="outro"] {
+    width: auto;
+}
+
+input[value="outro"]~input{
+display: none;
+}
+
+input[value="outro"]:checked~input{
+    display: inline;
 }
