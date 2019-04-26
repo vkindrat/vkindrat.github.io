@@ -14,21 +14,6 @@ main div {
 }
 
 
-h1, h2 {
-	font-size: 30px;
-	font-family: "Open Sans Condensed" ,"Arial", sans-serif;
-}
-
-main h1{
-	font-size: 300%
-	border-bottom: .5rem black solid;
-	padding: 1.25rem;
-	text-align: center;
-    background-color: #851944;
-    color: #FFF;
-    text-transform: uppercase;
-}
-
 
 p{
 	margin: 20px 0;
