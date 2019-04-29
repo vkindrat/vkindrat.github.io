@@ -7,11 +7,14 @@ background-color: #F2FFFC;
 font-size: 120%;
 }
 
-main div {
-	padding: 30px 0;
-	width: 720px;
-	margin:auto;
+
+.container {
+    width: 80ch;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5em 0;
 }
+
 
 
 h1, h2 {
@@ -50,16 +53,33 @@ blockquote{
 }
 
 
+.foto-eu{
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 300px;
+	width: 20%;
+}
+
+
 aside{
 background-color: #3C1D3D;
 	color: #F2FFFC;
 }
 
 
+aside{
+	width: calc(0.9 * 300px);
+    float: right;
+    position: relative;
+   top: 300px;
+}
+
+
+
 footer{
 color: #F2FFFC;
 }
-
 
 
 nav a {	
@@ -131,17 +151,24 @@ em {
 	display:inline-block;  
 }
 
+.icones-sociais a {
+    width: 40px;
+    height: 40px;
+    display: block;
+    text-indent: -99999px;
+}
+
 .icones-sociais a:hover:after,
 .icones-sociais a:focus:after{
 	content: attr(data-tooltip);
 	position: absolute;
+    background: black;
+    color: white;
     top: 100%;
+    width: 300%;
     right: 0;
     text-indent: 0;
-    width: 300%;
-    background: black;
     font-size: .75em;
-    transform: translateZ();
     
 }
 
@@ -181,7 +208,6 @@ cite{
 }
 
 .foto-eu, aside {
-	float: right;
 	box-sizing: border-box;
 	border-bottom: 10px solid black;
 	border-left: 12px solid black;
@@ -214,22 +240,10 @@ footer {
 
 main{
 	float: left;
-	width: 85%;
-	padding-bottom: 100px;
+	width: calc(100% - 0.9 * 300px);
+	padding-bottom: 4em;
 }
 
-.foto-eu{
-	position: absolute;
-	top: 0;
-	right: 0;
-}
-
-aside{
-	width: 15%;
-	position: relative;
-	top: 310px;
-	right: 0;
-}
 
 
 legend{
@@ -240,7 +254,7 @@ font-size: 115%;
 
 #nome{
 display:block;
-width: 55em;
+width: 20em;
 border-color: lightgrey;
 }
 
@@ -253,7 +267,7 @@ border-color: lightgrey;
 
 #email{
 display: block;
-width: 55em;
+width: 20em;
 border-color: lightgrey;
 }
 
@@ -295,23 +309,3 @@ input:invalid{
 }
 
 
-fieldset > fieldset {
-    display: inline;
-}
-
-
-label[for="outro"] {
-    display: inline;
-}
-
-input[name="outro"] {
-    width: auto;
-}
-
-input[value="outro"]~input{
-display: none;
-}
-
-input[value="outro"]:checked~input{
-    display: inline;
-}
