@@ -1,37 +1,63 @@
+html, body {
+    overflow-x: hidden;
+    height: 100%;
+}
+
+body{
+    perspective: 6px;
+    perspective-origin: 50% 160px;
+    display: block;
+}
 
 header{
     position: relative;
 }
 
 
-.ul-inicial{
+.ul-inicial, .titulo-principal{
+    transform-style: preserve-3d;
 
+}
+
+.ul-inicial{
+    
     text-transform: none;
-    padding: .2em;
-    margin: .4em auto ;
-     perspective: 6px;
+    padding: .8em;
+    margin: .2em auto ;
+     perspective:120px;
     position: absolute;
     top: 0;
     left: 0;
     bottom:0; 
     right:0;
-    width: 100%;
-    height: 100%;   
+     
 }
 
 .ul-inicial li{
 
-    font-size: 130%;
+    font-size: 120%;
+}
+
+.palavra-home{
+    animation: aparece 2s; 
+
+}
+
+@keyframes aparece{
+    from{
+        opacity: 0;
+        transform:scale(0.001);
+    }
 }
 
 .eficiencia{
     position: absolute;
-    top:50%;
+    top:40%;
     left: 60%;
     font-family: "Shadows into Light";
     color:#D5447E;
     transform: translate(-50%, -50%) rotate(-5deg) translateZ(4px) scale(0.25);
-    
+    opacity: .3;
 
 }
 
@@ -42,7 +68,7 @@ position: absolute;
     font-family: "Shadows into Light";
     color:#D5447E;
     transform: translate(-50%, -50%) rotate(10deg) translateZ(1px) scale(0.25);
-    
+    opacity: .3;
 
 }
 
@@ -53,7 +79,7 @@ position: absolute;
     top: 45%;
     left: 25%;
     transform: translate(-50%, -50%) rotate(-10deg) translateZ(2px) scale(0.25);
-
+    opacity: .6;
 }
 
 .css3{
@@ -63,7 +89,7 @@ position: absolute;
     transform: translate(-50%, -50%) rotate(5deg) translateZ(2px) scale(0.25);
     font-family: "Shadows into Light";
     color:#D5447E;
-    
+    opacity: .6;
 
 }
 
@@ -74,7 +100,7 @@ position: absolute;
     transform: translate(-50%, -50%) rotate(10deg) translateZ(2px) scale(0.25);
     font-family: "Shadows into Light";
     color:#D5447E;
-    
+     opacity: .6;
    
 }
 
@@ -85,7 +111,7 @@ position: absolute;
     transform: translate(-50%, -50%) rotate(-5deg) translateZ(1px) scale(0.25);
     font-family: "Shadows into Light";
     color:#D5447E;
-    
+    opacity: .3;
     
 
 }
@@ -97,7 +123,7 @@ position: absolute;
     transform: translate(-50%, -50%) rotate(-5deg) translateZ(3px) scale(0.25);
     font-family: "Shadows into Light";
     color:#D5447E;
-    
+    opacity: .8;
     
 
 }
@@ -109,7 +135,7 @@ position: absolute;
     transform: translate(-50%, -50%) rotate(10deg) translateZ(3px) scale(0.25);
     font-family: "Shadows into Light";
     color:#D5447E;
-   
+   opacity: .8;
     
 
 }
@@ -121,7 +147,7 @@ position: absolute;
     transform: translate(-50%, -50%) rotate(-5deg) translateZ(2px) scale(0.25);
     font-family: "Shadows into Light";
     color:#D5447E;
-    
+     opacity: .6;
 
 
 }
@@ -133,7 +159,7 @@ position: absolute;
     transform: translate(-50%, -50%) rotate(5deg) translateZ(1px) scale(0.25);
     font-family: "Shadows into Light";
     color:#D5447E;
-    
+    opacity: .3;
     
 
 }
@@ -145,14 +171,16 @@ position: absolute;
     transform: translate(-50%, -50%) rotate(10deg) translateZ(2px) scale(0.25);
     font-family: "Shadows into Light";
     color:#D5447E;
-    
+    opacity: .6;
     
 }
 
+
 .titulo-principal{
+
     font-size: 300%;
     border-bottom: .2em black solid;
-    padding: .8em;
+    padding: .2em;
     text-align: center;
     background-color: #851944;
     color: #FFF;
@@ -195,12 +223,40 @@ position: absolute;
     font-size: 3em;
     color: #000;
 }
-.saudacao em {
+.sites-maravilhosos {
     font-size: 5em;
     color: #851944;
     transform: rotate(-5deg) skew(-10deg);
     display: inline-block;
 }
+
+
+.sites-maravilhosos{
+    animation: quica 1s infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    position: relative;
+
+    
+
+}
+
+@keyframes quica{
+    0%{
+        top: -5px;
+    }
+
+    100%{
+        top: 5px;
+    }
+}
+
+.sites-maravilhosos:hover,
+.sites-maravilhosos:focus{
+    animation-play-state:paused;
+}
+
+
 .botao-index {
     background-color: #851944;
     color: #FFF;
@@ -209,16 +265,37 @@ position: absolute;
     display:block;
     text-align: center;
     margin: 4em auto;
-    padding: .6em;  
+    padding: .6em;
+    text-decoration: none;
+
+}
+
+.botao-index:hover,
+.botao-index:focus{
+    background-color: #C54974;
+    color: white;
+    box-shadow: 0 0 1em #FA9;
+    transition: .5s;
 }
 
 .secao-inicio h2 {
     text-transform: uppercase;
+    text-shadow: 4px 2px #000;
 }
 .trabalhos {
+    background-image: linear-gradient(135deg,
+    transparent,
+    transparent 14px,
+    rgba(0, 0, 0, 0.1) 14px,
+    rgba(0, 0, 0, 0.1) 15px,
+    transparent 15px,
+    transparent);
+
+    background-size: 20px 20px;
+    background-attachment: fixed;
+    background-color: #851944;
     height: 28em;
     padding: 3em;
-    background-color: #3C1D3D;
     border-top: .5em solid #000;
     border-bottom: .5em solid #000;
 
@@ -229,18 +306,26 @@ position: absolute;
     margin-bottom: .6em;
 }
 .trabalhos ul {
-    overflow: hidden;
+    display: flex;
     border: 10px solid black;
 }
 .trabalhos li {
-    float: left;
-    width: 33.333%;
+    flex: 1;
 }
 .trabalhos img {
     width: 100%;
     display: block;
 }
 .blog {
+    background-image:linear-gradient(45deg,
+    transparent,
+    transparent 14px,
+    rgba(255, 255, 255, 0.1) 14px,
+    rgba(255, 255, 255, 0.1) 15px,
+    transparent 15px,
+    transparent);
+    background-size: 20px 20px;
+    background-attachment: fixed;
     height: 20em;
     line-height: 2em;
     padding: 3em;
@@ -256,32 +341,35 @@ font-size: 250%;
 
 .blog li a {
     color: #FCF;
-    width: 30%;
+    padding: .5em;
+    display: block;
 }
 
 .blog li{
-
-    width: 30%;
+   width:30%
 }
 
-.mais-recente{
-background-color: #F2FFFC; 
+
+
+.blog ol a:hover{
+    color:red;
 }
 
- .blog .mais-recente a{
-
-    color: #F26;
+.blog a:hover + .inicio-post,
+.blog a:focus + .inicio-post {
+    display: block;
 }
 
-.inicio-post{
+.blog .inicio-post{
     position: absolute;
     top: 4em;
     height: 8em;
-    left: 30%;
+     left: 30%;
     right: 4em;
     background-color: #F2FFFC;
     color: #000;
     padding: 1.5em;
+    display: none;
 }
 
 
@@ -290,10 +378,16 @@ background-color: #F2FFFC;
     clear: both;
     position: relative;
     bottom: 0;
+
+}
+
+.rodape-final a:hover,
+.rodape-final a:focus{
+color: red;
 }
 
 footer {
-    background-color: #000;
+    
     color: #FFF;
 }
 footer a {
@@ -303,10 +397,11 @@ main {
     width: 100%;
     padding-bottom: 0;
     float: none;
+
 }
 
 .banner-twitter{
-    width: 15em;
+    width: 14em;
     line-height: 1em;
     padding: .8em 0;
     box-sizing: border-box;
@@ -324,10 +419,13 @@ main {
     top: 0;
     right: 0;
     transform-origin: 0 0;
-    transform: translate(6.5754em, -2.4749em) rotate(45deg); 
+    transform: translate(calc(.707 * (3.5em - 100%) + 100%), calc(-.707 * 3.5em)) rotate(45deg);
     text-transform: none;
 }
 
-html {
-    overflow-x: hidden;
+.banner-twitter{
+    animation: aparece 0.5s;
+    animation-delay: 2s;
+    animation-fill-mode: backwards;
 }
+
