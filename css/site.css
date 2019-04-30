@@ -5,6 +5,8 @@ line-height: 1.5;
 font-family:"Crimson Text","Times New Roman", serif;
 background-color: #F2FFFC;
 font-size: 120%;
+display: flex;
+flex-wrap: wrap;
 }
 
 
@@ -47,9 +49,9 @@ blockquote{
     border: .5em solid #C2CCCA;
     padding:2%;
     margin: 1em 1em;
-    width: 30ch;
+    width: 28ch;
     box-sizing: border-box;
-    height: 15em;
+    height: 18em;
 }
 
 
@@ -58,7 +60,14 @@ blockquote{
 	top: 0;
 	right: 0;
 	height: 300px;
-	width: 20%;
+	 border-bottom: .5em solid black;
+	border-left: .5em solid black;
+}
+
+main{
+	
+	flex-grow: 1;
+	padding-bottom: 4em;
 }
 
 
@@ -69,10 +78,7 @@ background-color: #3C1D3D;
 
 
 aside{
-	width: calc(0.9 * 300px);
-    float: right;
-    position: relative;
-   top: 300px;
+	padding-top: calc(300px + 1em);
 }
 
 
@@ -107,7 +113,7 @@ aside a:focus{
 	opacity: .5px;
 }
 
- aside, footer {
+ footer {
     padding: 20px;
 }
 
@@ -209,8 +215,8 @@ cite{
 
 .foto-eu, aside {
 	box-sizing: border-box;
-	border-bottom: 10px solid black;
-	border-left: 12px solid black;
+	
+
 }
 
 
@@ -238,43 +244,11 @@ footer {
     padding: 20px;
 }
 
-main{
-	float: left;
-	width: calc(100% - 0.9 * 300px);
-	padding-bottom: 4em;
-}
-
-
 
 legend{
 font-weight: bold;
 font-size: 115%;
 
-}
-
-#nome{
-display:block;
-width: 20em;
-border-color: lightgrey;
-}
-
-#nome:hover,
-#nome:focus{
-	border-color: yellow;
-	opacity:0.5;
-}
-
-
-#email{
-display: block;
-width: 20em;
-border-color: lightgrey;
-}
-
-#email:hover,
-#email:focus{
-border-color:yellow;
-opacity:0.5;
 }
 
 
