@@ -30,8 +30,9 @@ aside{
 	position: relative;
 	bottom:  10%;
 	left: 23%;
-	border-left: 3px black;
 	
+
+
 
 }
 
@@ -43,4 +44,87 @@ aside a {
 	color: black;
 	font-size: 1.5em;
 	font-family: 'Gugi', cursive;
+	border-left: 6px solid black;
+	border-bottom: 6px solid black;
+	text-decoration: none;
 }
+
+aside a:hover,
+aside a:focus{
+	text-decoration: underline;
+	text-shadow: 1.3px 1.3px grey;
+}
+
+
+.rodape-asside{
+
+	width: 12em;
+	height: 45em;
+	position: relative;
+	left: .5em;
+	bottom: 2em;
+	background-color: grey 0.7;
+	border-radius: 12px;
+	border: 2px double black;
+
+	background-image: linear-gradient(135deg,
+    transparent,
+    transparent 14px,
+    rgba(0, 0, 0, 0.1) 14px,
+    rgba(0, 0, 0, 0.1) 20px,
+    transparent 20px,
+    transparent);
+    background-size: 20px 20px;
+    background-attachment: fixed;
+
+}
+
+.rodape-asside li a{
+
+	width: 100px;
+	height: 70px;
+	display: block;
+	text-indent: 60px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 1.5em;
+	font-weight: bold;
+	font-family: 'Gugi', cursive;
+	padding: .3em;
+	color: rgb(30, 70, 160);
+
+
+}
+
+.rodape-asside li a:hover,
+.rodape-asside li a:focus{
+	text-decoration: underline;
+	text-shadow: 1.3px 1.3px grey;
+}
+
+.linkedin {
+	background-image: url(../img/linkedin.png);
+	background-repeat: no-repeat;
+	background-size: 60px 60px;
+
+
+
+}
+
+.instagram {
+	background-image: url(../img/instagram-new.png);
+	background-repeat: no-repeat;
+	background-size: 60px 60px;
+	background-position: relative;
+	top: 20;
+	
+
+
+
+}
+
+.rodape-asside p{
+
+	font-size: 2em;
+}
+
