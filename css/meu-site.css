@@ -1,0 +1,157 @@
+body {
+	font-size: 120%;
+	height: 150%;
+	margin-left: .5em;
+	
+	background-image: linear-gradient(135deg,
+    transparent,
+    transparent 14px,
+    rgba(0, 0, 0, 0.1) 14px,
+    rgba(0, 0, 0, 0.1) 10px,
+    transparent 25px,
+    transparent);
+
+    background-size: 20px 20px;
+    background-attachment: fixed;
+   	background-color: rgb(40, 70, 90);
+
+}
+
+
+header{
+	
+	background-color: rgb(60, 60, 60);
+	height: 9em;
+	margin-top: 1em;
+	font-family: "Open Sans Condensed";
+	border-top: 2px solid grey;
+	border-bottom: 2px solid grey;
+	width: 100%;
+
+
+
+}
+
+.img-javascript{
+	height:5em; 
+	width:5em;
+	position: absolute;
+	top: 10%;
+	right:60%;
+}
+
+
+.img-html{
+	height:5em; 
+	width:5em;
+	position: absolute;
+	top: 10%;
+	right:50%;
+}
+
+.img-css{
+	height:5em; 
+	width:5em;
+	position: absolute;
+	top: 10%;
+	right:40%;
+}
+
+
+header h1{
+color:rgb(250, 250, 250);
+font-size: 2em;
+text-shadow: 4px black;
+
+}
+
+header h2{
+	margin-top: 3em;
+	font-size: 1.5em;	
+}
+
+
+.titulo-portfolio{
+	font-family: "Open Sans Condensed";
+	border-top: 1em;
+	font-size: 2em;
+	color: rgb(0, 0, 0);
+	text-shadow: 1.5px 1.5px black;
+	height: 3em;
+
+
+}
+
+
+.Portfolio-inicio{
+	background-size: 30px 30px;
+	background-color: grey;
+	border-top: 2px solid black;
+	border-bottom:2px solid black;
+	margin-top: 2em;
+	margin-bottom: 7em;
+	
+}
+
+
+.Portfolio-inicio ol li{
+	margin: 40px 1em;
+	font-size: 1.5em;	
+	height: 4em;
+
+
+}
+
+.Portfolio-inicio p{
+	font-size: 20px;
+	margin-top: 10px;
+}
+
+
+.Javascript-portfolio{
+
+	
+	border: 5px solid black;
+}
+
+.Html-portfolio{
+
+	display: block;
+	box-sizing: border-box;
+	border: 5px solid black;
+}
+
+
+.Css-portfolio{
+
+	display: block;
+	box-sizing: border-box;
+	border: 5px solid black;
+}
+
+
+nav aside{
+	width: 90%;
+	font-size: 3em;
+	position: absolute;
+	top: 120%;
+	color: white;
+}
+
+aside ul li{
+	font-size: 50%;
+	display: inline-block;
+}
+
+aside li a{
+	text-decoration: none;
+	color: grey;
+}
+
+aside li a:hover,
+aside li a:focus{
+
+	text-decoration: underline;
+	color: white;
+
+}
