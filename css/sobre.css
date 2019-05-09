@@ -1,0 +1,33 @@
+.background .conteudo {
+	
+	border: none;
+
+}
+
+.conteudo p{
+	font-size: 3em;
+	border-left: 5px solid black;
+	border-top: 5px solid black;
+	animation: aparece;
+}
+
+.conteudo p {
+
+animation: aparece 3s;
+	}
+
+	@keyframes aparece{
+		0%{
+			opacity:0;
+	}
+
+	100%{
+
+		opacity: 1;
+
+	}
+}
+
+
+
+
