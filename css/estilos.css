@@ -1,0 +1,41 @@
+#campo-digitacao{
+	height:160px; 
+	font-size:20px;
+}
+
+.frase{
+	font-size: 20px;
+	text-align: left;
+}
+
+
+.desativa-campo{
+	background-color: lightgray;
+}
+
+.icones{
+	vertical-align: middle;
+}
+
+.borda-vermelha{
+	border: 5px solid red;
+}
+
+.borda-verde{
+	border: 5px solid green;
+}
+
+
+.invisivel{
+	visibility: hidden;
+}
+
+.placar{
+	display: none;
+}
+
+body{
+	overflow: scroll;
+}
+
+
