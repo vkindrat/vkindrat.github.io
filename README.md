@@ -2,5 +2,9 @@
 
 #http://vkindrat.github.io/index2.html
 
-#http://vkindrat.github.io/index3.html
+#http://vkindrat.github.io/sobre.html
+
+#http://vkindrat.github.io/principal.html
+
+
 
