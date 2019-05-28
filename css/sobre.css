@@ -7,9 +7,6 @@
 	list-style-position: inside;
 	font-size: 2.8em;
 	animation: aparece;
-	animation-fill-mode: backwards;
-	
-
 	
 
 }
@@ -33,7 +30,51 @@ animation: aparece 4s;
 
 
 .background h1{
-	visibility: hidden;
+	animation:desaparece 2s;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+
+}
+
+@keyframes desaparece{
+		from{
+			opacity:.8;
+	}
+
+		to{
+			opacity: 0;
+
+
+	}
 }
 
 
+
+.logo{
+	float: right;
+	width: 180px;
+	height: 180px;
+	position: relative;
+	bottom: 200px;
+	right: 100px;
+	
+}
+
+.logo{
+	animation: aparece 2s;
+	animation-timing-function: linear;
+		}
+
+	@keyframes aparece{
+		from{
+			right:70px;
+			opacity: 0.3;
+	}
+
+	to{
+
+		right:100px;
+		opacity: 1;
+
+	}
+}
