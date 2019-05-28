@@ -3,15 +3,17 @@ html, body{
 	height: 100%;
 	font-size: 14px;
 	font-weight: normal;
+	
 }
 
 .background h1{
 	padding: 2em;
-	font-size: 4em;
+	font-size: 50px;
 	font-weight: bold;
 	font-family: 'Sofia', cursive;
 
 }
+
 .background a{
 color: black;
 }
@@ -34,6 +36,23 @@ color: black;
 
 }
 
+.logo{
+	float: right;
+	width: 180px;
+	height: 180px;
+	position: relative;
+	bottom: 220px;
+	right: 100px;
+	filter: saturate(20%);
+}
+
+.logo:hover,
+.logo:focus {
+	box-shadow:0px 40px 40px 40px grey;
+
+}
+
+
 
 .background .conteudo{
 	display: inline-block;
@@ -50,7 +69,7 @@ color: black;
 .titulo-curriculum{
 
 	
-	font-size: 2em;
+	font-size: 4em;
 	font-weight: bold;
 	
 }
@@ -58,8 +77,14 @@ color: black;
 .conteudo a {
 	display: block;
 	font-size: 2em;
+	text-decoration: none;
 	
 	
+}
+
+.conteudo a:hover,
+.conteudo a:focus{
+	text-decoration: underline;
 }
 
 .conteudo {
@@ -103,8 +128,9 @@ aside a {
 	color: black;
 	font-size: 1.5em;
 	font-family: 'Gugi', cursive;
-	border-left: 6px solid black;
-	border-bottom: 6px solid black;
+	
+	border-left: 5px inset black;
+	border-bottom: 5px inset grey;
 	text-decoration: none;
 	margin: 0 8px;
 
@@ -113,31 +139,24 @@ aside a {
 aside a:hover,
 aside a:focus{
 	text-decoration: underline;
-	text-shadow: 1.3px 1.3px grey;
+	text-shadow: 1.7px 1.7px grey;
+	
 }
+
+
 
 
 .rodape-asside{
-
 	width: 12em;
 	height: 45em;
 	float: left;
-	background-color: grey 0.9;
-
-	border-radius: 12px;
-	border: 7px double black;
-	margin-left:.3em;
-	background-image: linear-gradient(135deg,
-    transparent,
-    transparent 13px,
-    rgba(0, 0, 0, 0.9) 13px,
-    rgba(0, 0, 0, 0.9) 30px,
-    transparent 13px,
-    transparent);
-    background-size: 10px 10px;
-    background-attachment: fixed;
+	margin-left:10px;
+	border-top: 7px inset lightgrey;
+	border-right: 7px inset black;
 
 }
+
+
 
 .rodape-asside li a{
 
