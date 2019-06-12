@@ -11,13 +11,13 @@
 
 	troca[0].onclick = function(){
     background[0].style.filter = "hue-rotate(-20deg)";
-    header[0].style.filter = "hue-rotate(-90deg)";
+    header[0].style.filter = "hue-rotate(-120deg)";
 
 
     while(x<3){
 		
-		background[0].style.filter = "hue-rotate(50deg)";
-		header[0].style.filter = "hue-rotate(140deg)";
+		background[0].style.filter = "hue-rotate(40deg)";
+		header[0].style.filter = "hue-rotate(150deg)";
 		 
 		x++;
 		if(x == 3){
