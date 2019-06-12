@@ -1,85 +1,175 @@
- body{
-	width: 100%;
-	height: 100%;
+	html, body{
+		height: 100%;
+		width:100%;
+
 	font-size: 14px;
 	font-weight: normal;
-	
-}
 
-.background h1{
-	padding: 80px;
+
+	
+	}
+
+	.cabecalho{
+	background: 10px #20B2AA;
+	height: 150px;
+	border-bottom: 9px inset grey;
+
+	}
+
+
+	.cabecalho h1{
+
+	position: relative;
+	top: 20px;
+	
+	margin-left: 50px;
 	font-size: 50px;
 	font-weight: bold;
 	font-family: 'Sofia', cursive;
 
-}
 
-.background a{
-color: black;
-}
+	}
 
-.background h1:hover,
-.background h1:focus{
-	text-decoration: underline;
+
+	.cabecalho h1:hover,
+	.cabecalho h1:focus{
+
+
 	text-shadow: 1.3px 1.3px grey;
-}
+	}
 
-.background{
-	width: 100%;
-	height:100%;
+	.background{
+
 	background-image: url(../img/fotoweb.png);
-	filter: contrast(90%);
-	background-repeat: no-repeat;
-	background-size: cover;
-	position: relative;
+	background-repeat: repeat;
+	filter: hue-rotate(30deg);
+	background-size: contain;
 	overflow-y: auto;
-
-}
-
-
-
-.background .conteudo{
-	display: inline-block;
-	position: relative;
-	top: 3em;
-	left:4em;
-	width: 70em;
-	height:36em;
-	background-color: transparent;
+	overflow-x: hidden;
+	position: static;
 	
-	
-}
 
-.titulo-curriculum{
+
+	}
 
 	
-	font-size: 4em;
-	font-weight: bold;
-	
-}
 
-.conteudo a {
-	display: block;
-	font-size: 2em;
-	text-decoration: none;
-	width: 30%;
-	
-	
-}
+	.container-dois{
+		background:linear-gradient(-35deg, #66CDAA, #008080, grey);
+		
+		width: 100%;
+		height: 400px;
+		
+		border-top: 10px inset grey;
+		border-bottom: 10px inset grey;
+		margin-top: 200px;
 
-.conteudo a:hover,
-.conteudo a:focus{
-	text-decoration: underline;
-}
 
-.conteudo {
+
+		
+	}
+
+	.container-dois p{
+		padding-left: 15%;
+		padding-right: 70px;
+		padding-top: 80px;
+		text-align: justify;
+		font-size: 28px;
+		line-height: 1.3em;
+		
+	}
+
+	.logo{
+		z-index: 1;
+		height: 95px;
+		width:95px;
+		position: absolute;
+		top: 78%;
+		left: 90%;
+		border-radius: 50%;
+		top: 15px;
+	}
+
+	.logo:hover,
+	.logo:focus{
+		box-shadow: 6px 4px 8px grey;
+		border: 4px inset grey;
+	}
+
+	.logo:hover,
+	.logo:focus{
+		animation: gira 3s;
+		animation-iteration-count: infinite;
+		animation-timing-function: linear;
+		
+		
+
+	}
+
+	@keyframes gira{
+		0%{
+			
+			transform: rotate(0deg);
+		}
+		
+
+	
+		100%{
+			
+			transform: rotate(360deg);
+		}
+	}
+
+	.logo:focus,
+	.logo:active,
+	.logo:target{
+		background-image: url(../img/fotoweb2.png);
+	}
+
+
+
+	.conteudo {
+		
+	height: 170px;
+	padding: 70px;	
+	margin-left: 50px;
+	display: flex;
+
+
+	}
+
+	.conteudo p{
+
+	display: list-item;
+	list-style-type: disc;
+	list-style-position: inside;
+	font-size: 2.8em;
 	animation: aparece;
-}
 
 
-.conteudo  {
+	}
 
-animation: aparece 4s;
+
+
+
+	.conteudo p {
+	margin-top: 50px;
+	font-size: 30px;
+	line-height: 1.3em;
+	text-align: justify;
+	
+
+	}
+
+
+	.conteudo p {
+	animation: aparece;
+	}
+
+
+	.conteudo  {
+
+	animation: aparece 4s;
 	}
 
 	@keyframes aparece{
@@ -94,122 +184,156 @@ animation: aparece 4s;
 	}
 }
 
-
-aside{
-
-	width: 50em;
-	height:4em;
-	background-color: none;
-	position: relative;
-	bottom: 50px;
-	left: 23%;
-
+.conteudo p em{
+	font-style: italic;
 }
 
-aside a {
+
+
+	.container nav {
+	display: flex;
+
+
+	}
+
+
+
+
+
+	nav{
+	display: flex;
+	align-items: center;
+	margin-left: 200px;
+	width: 100%;
+	height:auto;
+
+
+	}
+
+	nav a {
 	position: relative;
 	top: 35%;
 	left: 22%;
-	padding: 1em;
+	padding: 22px;
 	color: black;
 	font-size: 1.5em;
 	font-family: 'Gugi', cursive;
-	
+
 	border-left: 5px inset black;
 	border-bottom: 5px inset grey;
 	text-decoration: none;
 	margin: 0 8px;
 
-}
+	}
 
-aside a:hover,
-aside a:focus{
+	nav a:hover,
+	nav a:focus{
 	text-decoration: underline;
 	text-shadow: 1.7px 1.7px grey;
-	
-}
+	opacity: 0.8;
+
+	}
 
 
 
 
-.rodape-asside{
+	.rodape-asside{
+	background-color: #FFFAFA;
+	background-size: 100%;
+	background-attachment: fixed;
 	width: 12em;
-	height: 45em;
+	margin-top: 70px;
+	height: 970px;
 	float: left;
-	margin-left:10px;
+	margin-left:7px;
 	border-top: 7px inset lightgrey;
 	border-right: 7px inset black;
 
-}
+	}
 
 
 
-.rodape-asside li a{
+	.rodape-asside li a{
 
 	width: 80px;
-	height: 70px;
+	height: 40px;
 	display: block;
-	text-indent: 60px;
-	text-align: center;
+	text-indent: 55px;
 	text-decoration: none;
 	font-size: 1.4em;
 	font-weight: bold;
 	font-family: 'Gugi', cursive;
-	padding: .2em;
+	padding: .4em;
 	margin-top: .8em;
 	color: rgb(0, 120, 210);
 
-}
+	}
 
 
-.rodape-asside li a:hover,
-.rodape-asside li a:focus{
+	.rodape-asside li a:hover,
+	.rodape-asside li a:focus{
 	text-decoration: underline;
 	text-shadow: 1.3px 1.3px grey;
 
-}
+	}
 
 
 
 
-.linkedin {
-	background-image: url(../img/linkedin.png);
+	.linkedin {
+	background-image: url(../img/linkedin1.png);
 	background-repeat: no-repeat;
 	background-size: 60px 60px;
+	position: relative;
+	right:5px;
+	
 
 
 
-}
+	}
 
-.instagram {
+	.instagram {
 	background-image: url(../img/instagram-new.png);
 	background-repeat: no-repeat;
-	background-size: 60px 60px;
+	background-size: 50px 50px;
 	background-position: relative;
 	top: 20;
 	
 
 
 
-}
 
-.rodape-asside p{
-	margin-top: .4em;
-	font-size: 3em;
+	}
+
+	.rodape-asside p{
+	margin-top: 20px;
+	margin-left: 10px;
+	font-size: 2em;
 	font-weight: bold;
 	font-family: 'Gugi', cursive;
-}
+	}
 
 
 
 
-.texto p{
-	display: inline-block;
-	position: relative;
-	top: 3em;
-	left:4em;
-	width: 70em;
-	height:36em;
-	background-color: transparent;
-	border: 5px solid black;
-}
+	#footer{
+		height: 118px;
+		color: white;
+		background-color:#475657;
+		
+		position: relative;
+		top:  618px;
+		left: 12%;
+		width: 100%;
+	}
+
+	#footer p{
+		font-size: 20px;
+		position: absolute;
+		
+
+	}
+
+
+
+
