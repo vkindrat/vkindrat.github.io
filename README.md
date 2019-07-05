@@ -6,7 +6,7 @@
 
 #http://vkindrat.github.io/principal.html
 
-#http://vkindrat.github.io/index3.html
+#http://vkindrat.github.io/negocio/index.html
 
 
 
