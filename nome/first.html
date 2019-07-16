@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/first.css">
+	<title>nome</title>
+</head>
+<body>
+
+<h1 id="titulo">Olá, qual é seu nome?</h1>
+
+	<input id="campo"></input>
+	<button id="botao" onclick = "troca()">Click</button>
+
+	<div class="opcoes">
+		<h2>O que deseja fazer?</h2>
+	</div>
+
+	<div class="opcoes-2">
+		<button onclick= "window.location.href = 'file:///E:/Users/VITOR/Desktop/ALURA/myprojects/first/imc.html';">Calcular IMC</button>
+		<button onclick="">Calculadora</button>
+		<button onclick="">Cara ou Coroa</button>
+		<button onclick="">Gire um Dado</button>
+	</div>
+
+
+
+	<script>
+		var nome = document.querySelector("#campo");
+		var texto = document.querySelector("#titulo");
+		var botao = document.querySelector("#botao");
+		var opcoes1 = document.querySelector(".opcoes");
+		var opcoes2 = document.querySelector(".opcoes-2");
+		
+		function troca(){
+			
+			texto.textContent = "Olá, " + nome.value;
+			nome.classList.add("input-esconde");
+			botao.classList.add("botao-esconde");
+
+			opcoes1.classList.remove("opcoes")
+			opcoes2.classList.remove("opcoes-2")
+
+
+			
+
+			
+
+		}
+
+		console.log(texto);
+	</script>
+	
+
+</body>
+</html>
