@@ -1,0 +1,36 @@
+.opcoes{
+	visibility: hidden;
+}
+
+.opcoes-2{
+	visibility: hidden;
+}
+
+
+button:hover{
+	box-shadow: 2px 2px grey;
+}
+
+button:active{
+	border: 3px solid grey;
+}
+
+div button{
+	display: block;
+	border: 1px double black;
+	margin: 10px;
+	font-size: 20px;
+
+
+}
+
+
+
+
+.botao-esconde{
+	display:none;
+}
+
+.input-esconde{
+	display:none;
+	
