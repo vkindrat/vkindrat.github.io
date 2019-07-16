@@ -7,10 +7,11 @@
 </head>
 <body>
 
+
 <h1 id="titulo">Olá, qual é seu nome?</h1>
 
-	<input id="campo"></input>
-	<button id="botao" onclick = "troca()">Click</button>
+	<input type="text" id="campo"></input>
+	<button id="botao" onclick = "validaNome(nome)">Click</button>
 
 	<div class="opcoes">
 		<h2>O que deseja fazer?</h2>
@@ -21,36 +22,14 @@
 		<button onclick="">Calculadora</button>
 		<button onclick="">Cara ou Coroa</button>
 		<button onclick="">Gire um Dado</button>
+
+
+		<button class="botao-volta" onclick="volta()">Voltar</button>
 	</div>
 
 
 
-	<script>
-		var nome = document.querySelector("#campo");
-		var texto = document.querySelector("#titulo");
-		var botao = document.querySelector("#botao");
-		var opcoes1 = document.querySelector(".opcoes");
-		var opcoes2 = document.querySelector(".opcoes-2");
+	<script src="js/first.js"></script>
 		
-		function troca(){
-			
-			texto.textContent = "Olá, " + nome.value;
-			nome.classList.add("input-esconde");
-			botao.classList.add("botao-esconde");
-
-			opcoes1.classList.remove("opcoes")
-			opcoes2.classList.remove("opcoes-2")
-
-
-			
-
-			
-
-		}
-
-		console.log(texto);
-	</script>
-	
-
 </body>
 </html>
