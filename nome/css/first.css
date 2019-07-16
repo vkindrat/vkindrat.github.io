@@ -7,6 +7,19 @@
 }
 
 
+#titulo{
+	margin-left: 30px;
+}
+
+#campo{
+	margin-left: 30px;
+}
+
+body{
+	background-image: url(../img/rerer.jpg);
+
+}
+
 button:hover{
 	box-shadow: 2px 2px grey;
 }
@@ -34,3 +47,5 @@ div button{
 .input-esconde{
 	display:none;
 	
+}
+
