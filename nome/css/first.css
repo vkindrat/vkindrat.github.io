@@ -15,6 +15,13 @@
 	margin-left: 30px;
 }
 
+.msg-erro{
+	color: red;
+	position: relative;
+	bottom: 15px;
+	left: 30px;
+}
+
 body{
 	background-image: url(../img/rerer.jpg);
 
