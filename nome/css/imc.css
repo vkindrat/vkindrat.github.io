@@ -21,9 +21,6 @@ button:active{
 .botoes{
 	width: 100%;
 	height: 200px;
-	
-	
-
 
 }
 
@@ -54,4 +51,8 @@ button:active{
 
 .imc-resultado{
 	font-size: 30px;
+}
+
+.msg-erro{
+	color: red;
 }
