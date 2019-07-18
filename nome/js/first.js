@@ -17,7 +17,10 @@ var nome = document.querySelector("#campo");
 			texto.textContent = "Olá, " + nome.value;
 			nome.classList.add("input-esconde");
 			botao.classList.add("botao-esconde");
+
 			localStorage.setItem('nome', nome.value);
+			
+
 			opcoes1.classList.remove("opcoes");
 			opcoes2.classList.remove("opcoes-2");
 			
@@ -34,7 +37,7 @@ var nome = document.querySelector("#campo");
 	
 
 
-	
+		var msgErro = document.querySelector(".msg-erro");
 		var nome = document.querySelector("#campo");
 
 		function validaNome(nome){
@@ -44,10 +47,11 @@ var nome = document.querySelector("#campo");
 		   if(nome != null && nome.value.match(letras))
 		     {
 		      troca();
+		      msgErro.textContent = "";
 		     }
 		   else
 		     {
-		     alert("Formato incorreto.");
+		     msgErro.textContent = "Formato inválido."
 		     return false;
 		     }
 		  }
@@ -58,9 +62,10 @@ var nome = document.querySelector("#campo");
 	
 		function volta(){
 
-		localStorage.setItem('nome', nome.value);
+		
 
 		window.history.back();
+		
 	}
 
 	
