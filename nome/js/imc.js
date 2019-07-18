@@ -7,6 +7,7 @@ var altura = document.querySelector(".altura");
 var texto = document.querySelector(".digite-altura");
 var textodois = document.querySelector(".digite-peso")
 var titulo = document.querySelector(".titulo");
+var msgErro = document.querySelector(".msg-erro");
 
 var resultadoFinal = document.querySelector(".imc-resultado");
 var botaoCalcula = document.querySelector(".botao-calcula");
@@ -35,3 +36,10 @@ function volta(){
 
 	window.history.back();
 }
+
+
+
+
+
+
+
