@@ -51,7 +51,7 @@ let questions = [
 	correct: "D"
 },
 {
-	question: "Quem foi o culpado pela morte do Bong gigante responsavel destruição de inúmeros neurônios de um certo grupo de pessoas?",
+	question: "Quem foi o culpado pela morte do Bong gigante responsavel pela destruição de inúmeros neurônios de um certo grupo de pessoas?",
 	choiceA: "Verme",
 	choiceB: "Preto a.k.a BombaNegra",
 	choiceC: "Ronnie a.k.a Bombadinho",
