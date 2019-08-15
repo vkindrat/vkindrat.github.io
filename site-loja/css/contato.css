@@ -152,11 +152,9 @@ html,body{
 
 
 
-.titulo-home{
+.titulo-contato{
 	font-size: 1.6rem;
-	position: relative;
-	top: 30px;
-	left: 20px;
+	
 	font-family: 'Lato', sans-serif;
 }
 
