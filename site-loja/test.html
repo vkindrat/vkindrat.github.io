@@ -21,7 +21,7 @@
 		<p class="logo-texto">The <br>Owl</br> Project</p>
 
 			<nav class="cabecalho-nav">
-			<a href="" class="texto-nav" id="texto-categoria">Categorias</a>
+			<a class="texto-nav" id="texto-categoria">Categorias</a>
 			<div class="dropdown-categorias">
 
 			<a href="eletronicos.html">Eletronicos</a>
@@ -36,10 +36,38 @@
 		<div class="dropdown-container">
 		<a class="login-texto">Login</a>
 		<div class="dropdown">
-			<a href="">Entrar</a>
-			<a href="">Nao possuí uma conta? Cadastre-se</a>
+			<p class="abre-modal" >Entrar</p>
+			<p class="abre-modal-cadastro">Nao possuí uma conta? Cadastre-se</p>
+			
+
 		</div>
 		</div>
+
+		<div id="modal-login">
+				<div class="modal-content">
+					<span class="close">&times;</span>
+					<p>Login</p>
+					<input type="text" name="">
+					<p>Senha</p>
+					<input type="password" name="">
+					<button class="botao-entra" type="submit">Entrar</button>
+				</div>
+			</div>
+
+			<div id="modal-cadastro">
+				<div class="modal-content">
+					<span class="close">&times;</span>
+					<p>Login</p>
+					<input type="text" name="" required="required">
+
+					<p>E-mail</p>
+					<input type="E-mail" name="" required="required">
+
+					<p>Senha</p>
+					<input type="password" name="" required="required">
+					<button class="botao-entra" type="submit">Cadastrar</button>
+				</div>
+			</div>
 
 		<a href="" class="icone-login"></a>
 	</header>
