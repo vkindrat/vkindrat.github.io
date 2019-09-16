@@ -86,7 +86,7 @@ html,body{
 
 }
 
-.cabecalho-nav:hover .dropdown-categorias{
+#texto-categoria:hover+.dropdown-categorias{
   display: block;
 }
 
