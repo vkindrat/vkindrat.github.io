@@ -138,6 +138,7 @@ function adicionaAoCart(title, price){
 			if(localStorage.getItem('cartArray')){
         		let asd = JSON.parse(localStorage.getItem('cartArray'));
         		
+        		adicionaAoCart(asd)
         		console.log(asd)
     			}
 		}
