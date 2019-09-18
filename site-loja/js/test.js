@@ -1,4 +1,8 @@
 
+
+
+
+
 // MODAL
 
 
@@ -82,12 +86,10 @@ function botaoAdicionaAoCart(event){
 	adicionaAoCart(title, price)
 	updateCartTotal();
 	
-
-
 }
 
 
-let cartArray = [];
+
 
 function adicionaAoCart(title, price){
 
@@ -104,7 +106,6 @@ function adicionaAoCart(title, price){
 		}
 	}
 
-
 	let conteudoCart = `
 					<div class="cart-item cart-column">
 						<span class="cart-item-title">${title}</span>
@@ -119,20 +120,28 @@ function adicionaAoCart(title, price){
 				itensCart.append(linhaCart)
 				linhaCart.getElementsByClassName("btn-danger")[0].addEventListener("click", removeCartItem)
 				linhaCart.getElementsByClassName("cart-quantity-input")[0].addEventListener("change", quantityChanged)
-				itensCart = {titulo:title,
-							preco:price
-							};
-				cartArray.push(itensCart)
+
+				var cartArray = [];
+				itensCart = {title,price}
+
+    			
 
 
-				localStorage.setItem('itens', JSON.stringify(cartArray))
-				const data = JSON.parse(localStorage.getItem('itens'))
-				console.log(cartArray)
+    			cartArray.push(itensCart)
+    			localStorage.setItem('cartArray', JSON.stringify(cartArray));
+				}
 
-				
 
-				
+	
+			window.onload = (event) => {
+
+			if(localStorage.getItem('cartArray')){
+        		let asd = JSON.parse(localStorage.getItem('cartArray'));
+        		
+        		console.log(asd)
+    			}
 		}
+
 
 
 let removeCart = document.getElementsByClassName("btn-danger")
