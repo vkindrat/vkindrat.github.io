@@ -122,7 +122,7 @@ function adicionaAoCart(title, price){
 				linhaCart.getElementsByClassName("cart-quantity-input")[0].addEventListener("change", quantityChanged)
 
 				
-
+}
 
 
 let removeCart = document.getElementsByClassName("btn-danger")
