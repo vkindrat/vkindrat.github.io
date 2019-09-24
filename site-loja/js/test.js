@@ -121,27 +121,7 @@ function adicionaAoCart(title, price){
 				linhaCart.getElementsByClassName("btn-danger")[0].addEventListener("click", removeCartItem)
 				linhaCart.getElementsByClassName("cart-quantity-input")[0].addEventListener("change", quantityChanged)
 
-				var cartArray = [];
-				itensCart = {title,price}
-
-    			
-
-
-    			cartArray.push(itensCart)
-    			localStorage.setItem('cartArray', JSON.stringify(cartArray));
-				}
-
-
-	
-			window.onload = (event) => {
-
-			if(localStorage.getItem('cartArray')){
-        		let asd = JSON.parse(localStorage.getItem('cartArray'));
-        		
-        		adicionaAoCart(asd)
-        		console.log(asd)
-    			}
-		}
+				
 
 
 
