@@ -154,29 +154,63 @@ function adicionaAoCart(title,price){
 	linhaCart.getElementsByClassName("btn-danger")[0].addEventListener("click", removeCartItem)
 	linhaCart.getElementsByClassName("cart-quantity-input")[0].addEventListener("change", quantityChanged)
 
-	
+	var itensArray = []
 	let itens = {title,price}
+	
 	itensArray.push(itens)
 	
 	localStorage.setItem("itens", JSON.stringify(itensArray))
 	
 
 }
-var itensArray = []
 
 
-window.onload = (e) => {
+
+function adicionaDaStorage(title, price){
+	let linhaCart = document.createElement("div")
+	let itensCart = document.getElementsByClassName("itens-cart")[0]
+	linhaCart.classList.add("linha-cart")
+	let itemNomeCart = itensCart.getElementsByClassName("cart-item-title")
+	
+		
+		
+	
+	
+	let conteudoCart = `
+						<div class="cart-item cart-column">
+							<span class="cart-item-title">${title}</span>
+						</div>
+						<span class="cart-price cart-column">${price}</span>
+						<input class="cart-quantity-input" type="number" value="1">
+						<button class="btn btn-danger" type="button">X</button>
+					</div>
+					`
+					linhaCart.innerHTML = conteudoCart;
+	itensCart.append(linhaCart)
+	linhaCart.getElementsByClassName("btn-danger")[0].addEventListener("click", removeCartItem)
+	linhaCart.getElementsByClassName("cart-quantity-input")[0].addEventListener("change", quantityChanged)
+
+	
+
+}
+
+
+window.onload = () => {
 
 	var price = document.getElementsByClassName("price")[0].innerText
  	var title = document.getElementsByClassName("nome-produto")[0].innerText
 	if(localStorage.hasOwnProperty("itens")){
-	let asd = localStorage.getItem("itens");
-	adicionaAoCart(title,price)
-	updateCartTotal()
+	
+	var asd = JSON.parse(localStorage.getItem("itens"))
+	adicionaDaStorage(title, price)
+	
+
 	}
 
-
+	updateCartTotal()
 }
+
+
 
 let removeCart = document.getElementsByClassName("btn-danger")
 
@@ -220,5 +254,5 @@ function removeCartItem(event){
 
 
 
-// LOCAL STORAGE
+
 
