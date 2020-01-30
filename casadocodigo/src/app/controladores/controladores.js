@@ -1,5 +1,20 @@
+const { check, validationResult } = require('express-validator/check');
+const LivroDao = require('../infra/livroDao');
+const db = require('../../config/database');
+
+const templates = require('../views/template.js')
 
 class LivroControlador{
+
+	static rotas(){
+		return {
+		autenticadas:'/livros*',	
+		lista: '/livros',
+		cadastro: '/livros/form',
+		edita: '/livros/form/:id',
+		remove:'/livros/:id'
+		}
+	}
 
 	 lista() {
 
@@ -9,7 +24,7 @@ class LivroControlador{
 
 			livroDao.lista()
 			.then(livros => resp.marko(
-					require('../views/livros/lista/lista.marko'),
+					templates.livros.lista,
 
 					{
 						livros: livros
@@ -25,7 +40,7 @@ class LivroControlador{
 	formularioCadastro(){
 		return function(req, resp) {
             resp.marko(
-                require('../views/livros/form/form.marko'), 
+                templates.livros.form, 
                 { livro: {} }
             );
         }
@@ -40,8 +55,8 @@ class LivroControlador{
 		    livroDao.buscaPorId(id)
 		        .then(livro => 
 		            resp.marko(
-		                require('../views/livros/form/form.marko'),
-		                { livro: req.body }
+		                templates.livros.form,
+		                { livro: livro }
 		            )
 		        )
 		        .catch(erro => console.log(erro));
@@ -55,11 +70,12 @@ class LivroControlador{
 		
 
 	return function(req,resp){
+		console.log(req.body)
 	const livroDao = new LivroDao(db)
 
 	const erros = validationResult(req);
 	if(!erros.isEmpty()){
-		return resp.marko(require('../views/livros/form/form.marko'),
+		return resp.marko(templates.livros.form,
 			{
 				livro: req.body,
 			errosValidacao: erros.array()
@@ -71,7 +87,7 @@ class LivroControlador{
 
 
 	livroDao.adiciona(req.body)
-	.then(resp.redirect('/livros'))
+	.then(resp.redirect(LivroControlador.rotas().lista))
 	.catch(erro => console.log(erro));
 	};
 	
@@ -86,7 +102,7 @@ class LivroControlador{
 
 	livroDao.atualiza(req.body)
 	.then((
-		resp.redirect('/livros')	
+		resp.redirect(LivroControlador.rotas().lista)	
 	))
 	.catch(erro => console.log(erro));
 		};

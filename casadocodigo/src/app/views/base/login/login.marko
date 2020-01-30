@@ -13,7 +13,7 @@
                     <h1 class="logo"><img src="/estatico/imagens/logo-casadocodigo.svg" alt="Casa do Código" /></h1>
                 </div>
                 <div class="cabecalhoPrincipal-navegacao col-8">
-                    <a href="/login" class="login">
+                    <a href="#" class="login">
                         <i class="fas fa-sign-in-alt"></i>Login
                     </a>
                 </div>
@@ -22,7 +22,21 @@
     </header>
     <main class="conteudoPrincipal">
         <div class="container">
-            <h1>Casa do Código - Home</h1>
+            <h1>Login</h1>
+
+            <form action="/login" method="post">
+
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="text" id="email" name="email" class="form-control"/>
+                </div>
+                <div class="form-group">
+                    <label for="senha">Senha:</label>
+                    <input type="password" id="senha" name="senha" class="form-control"/>
+                </div>
+
+                <input type="submit" value="Logar" class="btn btn-block btn-primary"/>
+            </form>
         </div>
     </main>
     <footer class="rodape">
