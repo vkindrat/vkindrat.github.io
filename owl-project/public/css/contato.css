@@ -1,0 +1,232 @@
+html,body{
+	height: 100%;
+	width:100%;
+	font-size: 1.2rem;
+	margin: 0 auto;
+}
+
+.logo{
+	height: 70px;
+	width:70px;
+	position: absolute;
+	top: 1%;
+	left: 2%;
+	border-radius: 50%;
+}
+
+.logo-texto{
+	font-size: .8rem;
+	color: white;
+	display: inline-block;
+	position: absolute;
+	top: 1px;
+	left: 8%;
+	font-family: 'Gugi', cursive;
+}
+
+.conteudo{
+	background-image: url(../img/vvvv4.jpg);
+	background-size: contain;
+	background-repeat: repeat-y;
+	overflow-x: hidden;
+	height: 90rem;
+}
+
+
+.cabecalho{
+	background-color: #22333B;
+	display: flex;
+	border-bottom: 6px solid black;
+	justify-content: center;
+	padding: 20px;
+
+}
+
+.cabecalho-nav{
+	width: 400px;
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+	right:20px;
+}
+
+
+
+.dropdown-categorias{
+	display: none;
+	position: absolute;
+	left: 3px;
+	top: 40px;
+	background-color: #22333B;
+	min-width: 120px;
+  	z-index: 1;
+
+}
+
+.dropdown-categorias a{
+	border: 2px solid black;
+	color: white;
+	display: block;
+	text-decoration: none;
+	padding: 8px;
+	font-size: .8rem;
+	font-family: 'Lato', sans-serif;
+}
+
+.dropdown-categorias a:nth-child(1){
+	border-bottom: 1px solid white;
+}
+
+.dropdown-categorias a:nth-child(2){
+	border-bottom: 1px solid white;
+}
+
+.dropdown-categorias a:hover{
+	box-shadow: inset 2px 2px 10px rgba(0,0,0,0.7);
+
+}
+
+#texto-categoria:hover+.dropdown-categorias{
+  display: block;
+}
+
+.texto-nav{
+	border-right:3px inset darkgrey;
+	color: white;
+	padding: 7px;
+	text-decoration: none;
+	font-family: 'Gugi', cursive;
+	position: relative;
+	
+}
+
+
+
+.container{
+	height: 910px;
+	width: 70%;
+	position: relative;
+	margin: 0 auto;
+	margin-top: 10%;
+}
+
+.produto{
+	height: 280px;
+	width: 280px;
+	
+	background-color: #FEEFFB;
+	filter: opacity(80%);
+	display: inline-flex;
+	margin-left: 35px;
+	margin-top: 10px;
+	box-sizing: border-box;
+	position: relative;
+
+}
+
+.produto:hover{
+	
+	border-bottom: 32px solid #22333B;
+	
+}
+
+.icone{
+	background-image: url(../img/cart-icon.png);
+	background-size: cover;
+	background-color: white;
+	height: 32px;
+    width: 35px;
+    position: absolute;
+    top: 100%;
+   	left:44%;
+    text-indent: -9000px;
+   	visibility: hidden;
+   	border-radius: 5%;
+}
+
+.produto:hover .icone,
+.produto .icone:hover {
+    visibility: visible;
+}
+
+
+
+
+.titulo-contato{
+	font-size: 1.6rem;
+	
+	font-family: 'Lato', sans-serif;
+}
+
+.container p{
+	font-family: 'Lato', sans-serif;
+
+}
+
+.login-texto{
+	font-size: 1.1rem;
+	color: white;
+	text-decoration: none;
+	position: absolute;
+	left: 329px;
+	top: 22px;
+	border-right:2px inset darkgrey;
+	height: 35px;
+	padding-right: 10px;
+}
+
+.icone-login{
+	background-image: url(../img/cart-icon.png);
+	background-size: cover;
+	background-color: white;
+	height: 32px;
+    width: 35px;
+    position: relative;
+   left:29%;
+   top: 20px;
+   border-radius: 16%;
+}
+
+.dropdown-container{
+	display: inline-block;
+	position: relative;
+
+
+}
+
+.dropdown{
+	display: none;
+	position: absolute;
+	left: 300px;
+	top: 47px;
+	background-color: #22333B;
+	min-width: 160px;
+  	z-index: 1;
+
+}
+
+.dropdown a{
+	border: 2px solid black;
+	color: white;
+	display: block;
+	text-decoration: none;
+	padding: 8px;
+	font-size: .8rem;
+	font-family: 'Lato', sans-serif;
+
+
+	
+}
+.dropdown a:nth-child(1){
+	border-bottom: 1px solid white;
+}
+
+.dropdown a:hover{
+	box-shadow: inset 2px 2px 10px rgba(0,0,0,0.7);
+
+
+}
+
+.dropdown-container:hover .dropdown{
+  display: block;
+}
