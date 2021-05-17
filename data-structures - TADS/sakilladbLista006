@@ -1,0 +1,55 @@
+
+
+
+
+		select  c.cidade from cidade c where cidade_id not in(select cidade_id from endereco);
+		
+		select p.pais from pais p where pais_id not in(select pais_id from cidade ) 
+
+
+		select f.titulo from filme f where filme_id not in (select distinct filme_id from inventario) 
+
+
+		select c.nome from categoria c where categoria_id not in(select categoria_id from filme_categoria )
+
+
+
+
+		select c._primeiro nome from cliente c 
+		join pagamento p on c.cliente_id = p.cliente_id group by c.cliente_id
+		having sum(p.valor) >=(select sum(p.valor) as valor from pagamento p
+		 where data_de_pagamento between ('2005-05-01') and ('2005-05-30') and p.cliente_id = '350');
+
+
+
+
+
+		select i.nome from idioma i
+		join filme f  on i.idioma_id = f.idioma_id
+		join inventario iv on f.filme_id = iv.filme_id
+		join aluguel a on iv.inventario_id = a.inventario_id
+		where a.cliente_id='330';
+
+
+		select f.titulo from filme f where idioma_id = (select i.idioma_id from idioma i
+		join filme f  on i.idioma_id = f.idioma_id where filme_id = '150');
+
+
+
+		select c.primeiro_nome from cliente c 
+		join pagamento p on c.cliente_id = p.cliente_id
+		group by c.cliente_id having sum(p.valor)>
+		(select sum(p.valor)/sum(cliente_id) from pagamento p);
+
+
+		select c.primeiro_nome from cliente c 
+		join endereco e on c.endereco_id = e.endereco_id
+		join cidade ci on e.cidade_id = ci.cidade_id where ci.cidade_id = (select ci.cidade_id from cliente c
+		join endereco e on c.endereco_id = e.endereco_id
+		join cidade ci on e.cidade_id = ci.cidade_id 
+		where c.cliente_id = '450');
+
+
+		select primeiro_nome from cliente c 
+		join pagamento p on c.cliente_id = p.cliente_id  group by c.cliente_id
+		having sum(p.valor) > (select sum(p.valor) from pagamento p where p.cliente_id = '300');
