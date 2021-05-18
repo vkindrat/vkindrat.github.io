@@ -118,13 +118,13 @@ int removeInicio(LISTA* lista){
 
 
 
-// OBSERVACAO
+/* OBSERVACAO
 
 if(temp == *lista){
 
-	inicio
+	inicio;
 }
-
+*/
 
 int removeFinal(LISTA* lista){
 	node *antNode, *tmp;
@@ -148,33 +148,39 @@ int removeFinal(LISTA* lista){
 
 
 
-int insereOrdenado(LISTA* lista){
-node *novo = (node*) malloc (sizeof(node));
-int cont, aux;
-	node *tmp;
-	node *tmpAnterior;
-	if((*lista) == NULL){
-		printf("LISTA VAZIA...\n");
+void insereOrdenado(LISTA* lista){
 
-	} else{
+        int num;
+        node *tmp;
+        tmp = *lista;
+        node *tmpAnterior = *lista;
+        node *novo = (node*) malloc (sizeof(node));
+        printf("Digite o numero que deseja inserir: ");
+        fflush(stdin);
+        scanf("%d",&novo->num);
 
-		printf("Digite o numero que deseja inserir na lista:");
-		scanf("%d",&novo->num);
-		cont= 0;
-		tmp = *lista;
-		while(tmp->prox != NULL && tmp->prox > tmp->novo ){
+        if(novo == NULL){
+            printf("Erro na aloca��o...\n");
+            exit(0);
+        
+        }
 
-			if(tmp->prox->num > ){
+        if (num < tmp->num) {
+            novo->prox = *lista;
+            return ;
+        }
+        
 
-             
-			}
-		}
+        while(tmp->prox != NULL && tmp->prox->num <= novo->num ){
 
+            
+            tmp = tmp->prox;
+        }
 
-	}
+        novo->prox = tmp->prox;
+        tmp->prox = novo;
 
-
-}
+    	}
 
 
 int removeOrdenado(LISTA* lista){
@@ -195,6 +201,8 @@ int main(){
     printf("5 - ordena lista\n");
     printf("6 - remove INICIO\n");
     printf("7 - remove FINAL\n");
+    printf("8 - insere ORDENADO\n");
+    printf("9 - remove ORDENADO\n");
     printf("0 - SAIR\n");
     scanf("%d",&op);
     switch(op){
@@ -219,10 +227,10 @@ int main(){
     case 7:
         removeFinal(lista);
         break;
-        case 8:
+    case 8:
         insereOrdenado(lista);
         break;
-        case 9:
+    case 9:
         removeOrdenado(lista);
         break;
     default:
