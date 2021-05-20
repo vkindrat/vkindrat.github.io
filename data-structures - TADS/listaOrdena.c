@@ -118,13 +118,9 @@ int removeInicio(LISTA* lista){
 
 
 
-/* OBSERVACAO
+// OBSERVACAO
 
-if(temp == *lista){
 
-	inicio;
-}
-*/
 
 int removeFinal(LISTA* lista){
 	node *antNode, *tmp;
@@ -152,7 +148,7 @@ void insereOrdenado(LISTA* lista){
 
         int num;
         node *tmp;
-        tmp = *lista;
+        tmp = *lista; // DEFINE A CABECA DA LISTA
         node *tmpAnterior = *lista;
         node *novo = (node*) malloc (sizeof(node));
         printf("Digite o numero que deseja inserir: ");
@@ -165,8 +161,12 @@ void insereOrdenado(LISTA* lista){
         
         }
 
-        if (num < tmp->num) {
-            novo->prox = *lista;
+        /* CHECA SE O NUMERO INSERIDO EH MENOR QUE O PRIMEIRO NUMERO DA LISTA,
+			SE FOR VERDADEIRO, SETA ESSE NUMERO COMO PRIMEIRO ELEMENTO.
+        */
+        if (novo->num < tmp->num) {
+            novo->prox = (*lista);
+            *lista = novo;
             return ;
         }
         
@@ -201,8 +201,6 @@ int main(){
     printf("5 - ordena lista\n");
     printf("6 - remove INICIO\n");
     printf("7 - remove FINAL\n");
-    printf("8 - insere ORDENADO\n");
-    printf("9 - remove ORDENADO\n");
     printf("0 - SAIR\n");
     scanf("%d",&op);
     switch(op){
@@ -227,10 +225,10 @@ int main(){
     case 7:
         removeFinal(lista);
         break;
-    case 8:
+        case 8:
         insereOrdenado(lista);
         break;
-    case 9:
+        case 9:
         removeOrdenado(lista);
         break;
     default:
